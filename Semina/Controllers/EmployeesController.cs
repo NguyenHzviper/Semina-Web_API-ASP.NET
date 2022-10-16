@@ -25,6 +25,7 @@ namespace Semina.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<S_EMP>>> Getemployee()
         {
+
             return await _context.S_EMP.ToListAsync();
         }
 
